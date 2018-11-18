@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>华融快贷</title>
+    <link href="./static/web/css/style.css" type="text/css" rel="stylesheet" />
+    <style>.agree{ width:100%;margin-bottom: 15px;background:#ff0000; color:#fff; border:none; border-radius:4px; line-height:42px; font-size:16px; cursor:pointer; margin-top:10px;}</style>
+    <script type="text/javascript" src="./static/web/js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            //开始编写
+            $(".agree").click(function(){
+                // var z=$(".xybox").is(':checked');
+                var z=$(".xybox").attr("data-active");
+                if(z==1){
+                } else {alert("请先同意条款!");return false;}
+            });
+        })
+
+    </script>
+    <style>
+        .jindu{ margin:30% 20px 0 20px;}
+        @-webkit-keyframes animate-stripes {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 44px 0;
+            }
+        }
+
+        .ui-progress-bar {
+            position: relative;
+            height: 35px;
+            padding-right: 2px;
+            background-color: #969da7;
+            border-radius: 35px;
+            -moz-border-radius: 35px;
+            -webkit-border-radius: 35px;
+            background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #d2d2d2), color-stop(1, #ffffff));
+            background: -moz-linear-gradient(#d2d2d2 0%, #fff 100%);
+            -webkit-box-shadow: inset 0px 1px 2px 0px #d2d2d2, 0px 1px 0px 0px #fff;
+            -moz-box-shadow: inset 0px 1px 2px 0px #d2d2d2, 0px 1px 0px 0px #fff;
+            box-shadow: inset 0px 1px 2px 0px #d2d2d2, 0px 1px 0px 0px #fff;
+        }
+
+        .ui-progress {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            height: 33px;
+            -moz-border-radius: 35px;
+            -webkit-border-radius: 35px;
+            border-radius: 35px;
+
+            -webkit-background-size: 44px 44px; /* Webkit */
+            background-color: rgba(255, 0, 0, 0.61);
+            background: -webkit-gradient(linear, 0 0, 44 44,
+            color-stop(0.00, rgba(255,255,255,0.17)),
+            color-stop(0.25, rgba(255,255,255,0.17)),
+            color-stop(0.26, rgba(255,255,255,0)),
+            color-stop(0.50, rgba(255,255,255,0)),
+            color-stop(0.51, rgba(255,255,255,0.17)),
+            color-stop(0.75, rgba(255,255,255,0.17)),
+            color-stop(0.76, rgba(255,255,255,0)),
+            color-stop(1.00, rgba(255,255,255,0))
+            ), -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 0, 0, 0.61)), color-stop(1, #ff0000));
+            background: -moz-repeating-linear-gradient(top left -30deg,
+            rgba(255,255,255,0.17),
+            rgba(255,255,255,0.17) 15px,
+            rgba(255,255,255,0) 15px,
+            rgba(255,255,255,0) 30px
+            ), -moz-linear-gradient(rgba(255, 0, 0, 0.61) 0%, #ff0000 100%);
+
+            /* Webkit embossing */
+            -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 0, 0, 0.61), inset 0px -1px 1px #ff0000;
+            /* Mozilla embossing */
+            -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 0, 0, 0.61), inset 0px -1px 1px #ff0000;
+            /* IE9 and Opera embossing */
+            box-shadow: inset 0px 1px 0px 0px rgba(255, 0, 0, 0.61), inset 0px -1px 1px #ff0000;
+
+            /* Give it a higher contrast outline */
+            border: 1px solid #ff0000;
+
+            /* Webkit magic */
+            -webkit-animation: animate-stripes 2s linear infinite;
+
+            /* TODO: Wait for Mozilla to support animation, then implement */
+        }
+
+        /* Progress indicator text */
+        .ui-progress span.ui-label {
+            font-size: 1.2em;
+            position: absolute;
+            right: 0;
+            line-height: 33px;
+            padding-right: 12px;
+            color: #fff;
+            text-shadow: #c9c9c9 0 1px 0px;
+            white-space: nowrap;
+        }
+        .shing {
+            text-align: center;
+            line-height: 32px;
+            font-size: 22px;
+            margin-bottom: 30px;
+            font-family: microsoft yahei;
+        }
+        .fr{ float:right;}
+        .sendok span.cgreen{ color:#009e22;}
+        .sendok h3{ line-height:32px; height:32px; border-bottom:1px solid #eee; margin-bottom:10px; margin-top:15px;font-size: 16px;font-family: microsoft yahei;}
+        .cred{ color:#E21C28;}
+        .sendok{ text-align:left;    margin: 10px;}
+        .sendok ul li{ font-size:14px;margin-bottom: 10px}
+        .sendok i {
+            float: right;
+            display: inline-block;
+            padding: 0 5px;
+            font-style: normal;
+            background: #009e22;
+            color: #fff;
+            border-radius: 4px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+
+
+
+<body class="bj">
+<script type="text/javascript" src="./static/web/js/jquery.min.js"></script>
+<div class="jindu">
+    <div class="shing">额度审核中...请稍后</div>
+    <div id="progress_bar" class="ui-progress-bar ui-container">
+        <div class="ui-progress">
+            <span class="ui-label" style="display:none;"><b class="value">1%</b></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="sendok" style="display:none;">
+    <h3><span class="fr cgreen">优秀</span>您的信用等级报告:</h3>
+    <ul>
+        <li>姓名: 423423</li>
+        <li>手机号码: 17512343231<i>正常</i></li>
+        <li>身份证号码: 432343454353534<i>正常</i></li>
+        <li>身份证号码命中法院被执行人名单: 否</li>
+        <li>身份证号码命中网上在逃人员黑名单: 否</li>
+        <li>手机号码命中运营商黑名单: 否</li>
+    </ul>
+
+    <h3><span class="fr cgreen">通过</span>匹配结果:</h3>
+    <div class="money">可下款金额: <span class="cred">12315元</span></div>
+
+    <hr></hr>
+    <a href="./wechat.html"><input type="button" value="接受额度 支付金额" class="agree" style="background-color: #ff7200"></a>
+    <div class="xybox" data-active="0"><span style="top: 4px;left: 4px"></span></div>我已经阅读并同意《<a href="./xiyi2.html" target="_blank" class="light">用户协议</a>》
+</div>
+<script>
+    $(".xybox").click(function(){
+        console.log($(this).attr("data-active"));
+        if($(this).attr("data-active")==0){
+            $(this).addClass("xyboxActive");
+            $(this).attr("data-active","1")
+        }else {
+            $(this).removeClass("xyboxActive");
+            $(this).attr("data-active","0")
+        }
+    });
+    (function( $ ){
+        // Simple wrapper around jQuery animate to simplify animating progress from your app
+        // Inputs: Progress as a percent, Callback
+        // TODO: Add options and jQuery UI support.
+        $.fn.animateProgress = function(progress, callback) {
+            return this.each(function() {
+                $(this).animate({
+                    width: progress+'%'
+                }, {
+                    /* 进度运行时间 */
+                    duration: 1000,
+
+                    // swing or linear
+                    easing: 'swing',
+
+                    // this gets called every step of the animation, and updates the label
+                    step: function( progress ){
+                        var labelEl = $('.ui-label', this),
+                                valueEl = $('.value', labelEl);
+
+                        if (Math.ceil(progress) < 20 && $('.ui-label', this).is(":visible")) {
+                            labelEl.hide();
+                        }else{
+                            if (labelEl.is(":hidden")) {
+                                labelEl.fadeIn();
+                            };
+                        }
+
+                        if (Math.ceil(progress) == 100) {
+                            labelEl.text('完成');
+                            setTimeout(function() {
+                                labelEl.fadeOut();
+                            }, 1000);
+                        }else{
+                            valueEl.text(Math.ceil(progress) + '%');
+                        }
+                    },
+                    complete: function(scope, i, elem) {
+                        if (callback) {
+                            callback.call(this, i, elem );
+                        };
+                    }
+                });
+            });
+        };
+    })( jQuery );
+    var a = 1;
+    if(a==1){
+        $(function() {
+            // Hide the label at start
+            $('#progress_bar .ui-progress .ui-label').hide();
+            // Set initial value
+            $('#progress_bar .ui-progress').css('width', '7%');
+            // Simulate some progress
+            $('#progress_bar .ui-progress').animateProgress(23, function() {
+                $(this).animateProgress(50, function() {
+                    setTimeout(function() {
+                        $('#progress_bar .ui-progress').animateProgress(100, function() {
+                            $('.sendok').slideDown();
+                            $('.jindu').hide();
+                        });
+                    }, 1000);
+                });
+            });
+
+        });
+    }else {
+        $(".jindu").css("display","none");
+        $(".sendok").css("display","block")
+    }
+
+</script>
+
+</body>
+</html>

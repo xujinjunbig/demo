@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>华融快贷-极速到账</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link href="./static/web/css/daikuan.css" rel="stylesheet" type="text/css"/>
+    <link href="./static/web/css/style.css" type="text/css" rel="stylesheet" />
+    <link href="./static/web/css/style2.css" type="text/css" rel="stylesheet" />
+    <!--<link rel="./stylesheet" type="text/css" href="./static/web/css/switchery.css" />-->
+
+    <script type="text/javascript" src="./static/web/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./static/web/js/slider.js"></script>
+
+</head>
+
+<body>
+<style>
+    html { font-family:microsoft yahei,sans-serif; line-height:1.15; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100% }
+    body { margin:0;}
+    menu, article, aside, details, footer, header, nav, section { display:block }
+    h1 { font-size:2em; margin:.67em 0 }
+    figcaption, figure, main { display:block }
+    figure { margin:1em 40px }
+    hr { box-sizing:content-box; height:0 }
+    code, kbd, pre, samp { font-family:monospace, monospace; font-size:1em }
+    a { background-color:transparent; -webkit-text-decoration-skip:objects; text-decoration:none;}
+    a:active, a:hover { outline-width:0 }
+    abbr[title] { border-bottom:none; text-decoration:underline; text-decoration:underline dotted }
+    b, strong { font-weight:bolder }
+    ul,li{ list-style:none;}
+
+    .feedbox,.xieyi{ width:640px; margin:15px auto; overflow:hidden; background:#EFF3F6;}
+    .xyxx{ padding:20px; height:300px; overflow-y:scroll; line-height:25px; font-size:12px;}
+    .agree{ width:50%;background:#ff0000; color:#fff; border:none; border-radius:4px; line-height:42px; font-size:16px; cursor:pointer; margin-top:10px;margin:0px auto;}
+
+    .feedbox ul{ margin:20px;}
+    .feedbox ul li{ margin-bottom:10px;}
+    .feedbox ul li div{ display:inline-block;}
+    .feedbox ul li span{ display:inline-block; width:100px; text-align:left;}
+    .feedbox input[type=text]{ line-height:30px;border:1px solid #C8C9C9;border-radius:4px; color:#797978; padding:0 5px;}
+    .cbox a{ display:inline-block; padding:0 10px; line-height:35px; background:#fff; border:1px solid #C8C9C9; font-size:14px; margin-right:10px; border-radius:4px; color:#797978}
+    .cbox a.on{ background:#FD5C02; color:#fff;}
+    .sqbtn{width:100%; background:#FD5C02; color:#fff; border:none; border-radius:4px; line-height:42px; font-size:16px; cursor:pointer; margin-top:10px;}
+
+    .formbox{
+        padding:0 3%;
+        background: #fff;
+    }
+    .formbox li{
+        line-height: 45px;
+        height:45px;
+        color:#666;
+        padding-left:140px;
+        position: relative;
+        border-bottom:1px solid #eeeeee;
+    }
+    .formbox li span{
+        position: absolute;
+        width:120px;
+        top:0;
+        right:0;
+    }
+    .formbox li i{
+        color:#de4332;
+        font-style: normal;
+        font-size:15px;
+        padding-left:2px;
+    }
+    .boxk{
+        position: absolute;
+        right:0;
+        top:2px;
+        width:30px;
+    }
+    #aui-show{
+        position: relative;
+    }
+
+    #aui-show ul{
+        position: absolute;
+        left: 0;
+        transition: all 60s;
+    }
+</style>
+<section class="aui-flexView">
+    <div class="aui-m-slider">
+        <div class="m-slider" data-ydui-slider>
+            <div class="slider-wrapper">
+                <div class="slider-item">
+                    <a href="javascript:;">
+                        <img src="./static/web/img/nx1.png">
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a href="javascript:;">
+                        <img src="./static/web/img/nx2.jpg">
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a href="javascript:;">
+                        <img src="./static/web/img/nx3.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="slider-pagination"></div>
+        </div>
+    </div>
+    <div class="divHeight"></div>
+
+    <section class="aui-scrollView">
+        <div class="divHeight"></div>
+
+        <div class="aui-horn-flex">
+            <div class="aui-horn-flex-hd">
+                <img src="./static/web/img/icon.png" class="icon-horn"/>
+            </div>
+            <div class="aui-horn-flex-bd" id="aui-show">
+                <ul style="top:0;display: none">
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜郭**小姐 电话135****4103成功放款45300元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜刘**小姐 电话155****8155成功放款17000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜赵**先生 电话158****6121成功放款22000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜李**小姐 电话134****4233成功放款43000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜冯**小姐 电话175****5508成功放款18000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜何**先生 电话156****6463成功放款57800元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜郭**先生 电话167****4653成功放款67500元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜孔**小姐 电话178****5485成功放款45700元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜吕**小姐 电话177****4568成功放款34530元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜云**先生 电话185****8453成功放款15000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜朱**小姐 电话135****6568成功放款45000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜周**小姐 电话178****5832成功放款70000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜陈**先生 电话181****3256成功放款24000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜卫**小姐 电话188****1273成功放款30000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜秦**先生 电话187****5783成功放款51000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜鲁**小姐 电话171****7458成功放款62000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜孔**小姐 电话185****8954成功放款20000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜余**先生 电话139****8682成功放款12000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜孟**小姐 电话138****9465成功放款57000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜包**小姐 电话138****3564成功放款30000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜钟*小姐  电话177****9355成功放款65400元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜杨**先生 电话152****4524成功放款34500元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜米**小姐 电话151****6247成功放款45000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜单**小姐 电话138****8353成功放款56800元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜左**先生 电话188****9358成功放款15400元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜罗**小姐 电话137****7247成功放款45600元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜万**先生 电话135****6158成功放款34000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜谭*小姐  电话189****9472成功放款17500元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜颜**小姐 电话156****4165成功放款64700元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜李**先生 电话189****3412成功放款56400元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜高**小姐 电话187****5643成功放款15600元</a>
+                    </li>
+                </ul>
+                <ul style="top:0;display: none">
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜吕**小姐 电话176****7689成功放款43500元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜石**先生 电话176****5788成功放款65200元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜伍**小姐 电话156****4756成功放款23400元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜梅**小姐 电话176****6758成功放款34600元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜顾**先生 电话151****5897成功放款15400元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜荀*先生  电话135****6679成功放款48700元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜郭**小姐 电话134****9654成功放款24500元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜卢**先生 电话137****2238成功放款34500元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜陆**小姐 电话188****8621成功放款53600元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜林**小姐 电话153****4623成功放款23500元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜施**先生 电话157****6811成功放款53500元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜吴**小姐 电话156****3568成功放款45700元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜罗**小姐 电话136****5354成功放款34500元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜苗**小姐 电话187****5658成功放款15000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜郑**先生 电话167****9687成功放款38000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜蒋**小姐 电话138****4569成功放款29000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜杨*小姐  电话176****8783成功放款16000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜黄**先生 电话136****6549成功放款28000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜潭**小姐 电话185****7446成功放款11000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜谭**先生 电话156****6543成功放款69000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜祝**小姐 电话155****6409成功放款21000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜雷**小姐 电话175****5665成功放款35400元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜汤**先生 电话185****8234成功放款38000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜唐**小姐 电话131****4256成功放款53000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜钟**先生 电话135****5136成功放款27000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜孙**小姐 电话155****5487成功放款80000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜卫**小姐 电话132****4163成功放款45000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜魏**先生 电话155****3315成功放款38000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜江**小姐 电话185****1403成功放款26000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜叶**先生 电话135****5101成功放款16000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜许**小姐 电话138****9852成功放款30000元</a>
+                    </li>
+                </ul>
+                <ul style="top:0;display: none">
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜郭**先生 电话155****4543成功放款64000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜罗**小姐 电话175****5625成功放款16500元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜洪**小姐 电话156****4432成功放款37800元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜王**小姐 电话185****2535成功放款34000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜谭**先生 电话134****5412成功放款14000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜黄**小姐 电话156****4635成功放款76000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜白**先生 电话181****7564成功放款38000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜司徒*先生 电话155****6521成功放款55000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜肖**先生 电话182****7574成功放款22100元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜向**先生 电话185****1523成功放款12100元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜梁**小姐 电话175****9715成功放款43300元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜朱**小姐 电话177****4168成功放款54000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜曹**小姐 电话135****8755成功放款38000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜田**小姐 电话186****4642成功放款53000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜高**先生 电话156****6777成功放款45000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜李**小姐 电话189****8545成功放款54000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜陶**先生 电话182****4762成功放款60000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜宋**小姐 电话134****9676成功放款78000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜袁**先生 电话157****7469成功放款25200元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜赵**小姐 电话176****5688成功放款53000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜常**小姐 电话189****3776成功放款65000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜许**先生 电话158****4255成功放款48000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜黄**小姐 电话135****6433成功放款56000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜任**小姐 电话155****3757成功放款23000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜方*小姐  电话154****4253成功放款43000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜罗**小姐 电话131***3534成功放款14000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭徐郭**先生 电话138****1455成功放款65000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜夏**小姐 电话135****3822成功放款32000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜白**先生 电话155***4525成功放款15000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜刘**小姐 电话176****5356成功放款43000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜赵**小姐 电话132****1523成功放款54000元</a>
+                    </li>
+                </ul>
+                <ul style="top:0;display: none">
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜钱**小姐 电话151****5386成功放款25000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜袁**先生 电话139****9769成功放款40000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜郭**小姐 电话133****5688成功放款70000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜苏**先生 电话136****9578成功放款18000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜夏**小姐 电话175****8321成功放款23000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜郭**小姐 电话135****2354成功放款20000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜严**先生 电话154****5783成功放款39000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜郭**小姐 电话135****9872成功放款43000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜肖**先生 电话176****8578成功放款26000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜王**小姐 电话155****3577成功放款31000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜许**先生 电话134****3599成功放款29000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜欧阳**小姐 电话157****5893成功放款33000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜汪**先生 电话171****9755成功放款40000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜包**小姐 电话135****8658成功放款28000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜郭**小姐 电话151****2675成功放款65800元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜甘**小姐 电话154****5783成功放款46000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜邱**先生 电话182****8659成功放款20000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜张**小姐 电话132****3756成功放款34000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜霍**小姐 电话137****4675成功放款60000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜郭**先生 电话155****6577成功放款45000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜史**小姐 电话137****8653成功放款15000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜韩**小姐 电话189****6987成功放款36000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜陈**先生 电话176****1163成功放款10000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜王**先生 电话135****4425成功放款28000元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜贾**先生 电话134****4133成功放款36600元</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">恭喜贾**先生 电话134****4133成功放款36600元</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="divHeight"></div>
+    </section>
+    <input type="button" value="开始申请" class="agree">
+    <div style="margin:15px auto;"><div class="xybox" data-active="0"><span></span></div>我已经阅读并同意《<a href="./xiyi.html" target="_blank" class="light">用户协议</a>》</div>
+</section>
+<script type="text/javascript">
+    var suiji = Math.round(Math.random()*10);
+    if(suiji>3){
+        if(suiji%5==0){
+            suiji =1;
+        }
+        if(suiji%3==0){
+            suiji =suiji/3;
+        }else if(suiji%2==0) {
+            suiji=suiji/2-1
+        }else {
+            suiji=(suiji-1)/2
+        }
+    }
+
+    $("#aui-show").find("ul").each(function(index){
+        var obj = $(this);
+        if(index==suiji){
+            $(this).css("display","block");
+            var time = setTimeout(function(){
+                obj.css("top","-748px");
+            },1000)
+        }
+    });
+
+    $(".xybox").click(function(){
+        console.log($(this).attr("data-active"));
+           if($(this).attr("data-active")==0){
+               $(this).addClass("xyboxActive");
+               $(this).attr("data-active","1")
+           }else {
+               $(this).removeClass("xyboxActive");
+               $(this).attr("data-active","0")
+           }
+    });
+    $(function(){
+        //开始编写
+        $(".agree").click(function(){
+            var z=$(".xybox").attr("data-active");
+            if(z==1){
+                $(".aui-flexView").hide();
+                $(".body").show();
+            } else {alert("请先同意条款!");return false;}
+
+        });
+    })
+</script>
+
+<link type="text/css" rel="stylesheet" href="./static/web/css/registter.css">
+<script type="text/javascript" src="./static/web/js/2vali.min.js"></script>
+<div class="body" style="display:none;">
+
+    <div class="vli">
+        <div class="wrapper move">
+            <div id="register">
+
+                                <form name='feedback' method='post' enctype='multipart/form-data' action="./apply.html" class="beff">
+                    <input name='enews' type='hidden' value='AddFeedback'>
+                    <input name='bid' type='hidden' value='1'>
+                    <img src="./static/web/img/daikuanw.jpg" style="width:100%;margin:0px auto;"/>
+                    <h3>请认真填写以下信息正确性，否则申请无法通过！</h3>
+                    <div class="vali">
+                        <input type="text" name="code"  value="1231" class="Required" placeholder="推荐工号">
+                    </div>
+                    <div class="vali">
+                        <input type="text" name="name" value="423423" class="Required" placeholder="姓名">
+                    </div>
+                    <div class="vali">
+                        <input type="text" name="tel" value="17512343231" placeholder="请输入11位手机号" class="phone">
+                    </div>
+                    <div class="vali">
+                        <input type="text" name="card" value="432343454353534" class="cid" placeholder="请输入身份证">
+                    </div>
+                    <div class="vali reqtps">
+                        <input type="text" name="blank" value="234325345242342342" class="Requireds" placeholder="银行卡号">
+                    </div>
+
+                    <div class="vali">
+                        <input type="text" name="coin" value="313" maxlength="3" class="eal" placeholder="你的芝麻信用分">
+                        <!--<p class="ealWords" style="font-size:12px;padding-top:2px;display:none;">请输入3位数字</p>-->
+                    </div>
+
+                    <div class="formbox">
+                        <ul>
+                            <li><span>是否有社保</span><div class="boxk" style="float: right;height: 40px;margin-bottom: 0" ><input type="checkbox" id="social" checked name="security" class="chk_3" value="1"><label for="social"></label></div></li>
+                            <li><span>是否有公积金</span><div class="boxk" style="float: right;height: 40px;margin-bottom: 0"><input type="checkbox" id="fund" checked name="fund" class="chk_3" value="1"><label for="fund"></label></div></li>
+                            <li><span>是否有车</span><div class="boxk" style="float: right;height: 40px;margin-bottom: 0"><input type="checkbox" id="car"  name="car" class="chk_3"  value="1"><label for="car"></label></div></li>
+                            <li><span>是否有房</span><div class="boxk" style="float: right;height: 40px;margin-bottom: 0"><input type="checkbox"id="house"  name="house" class="chk_3" value="1"><label for="house"></label></div></li>
+                        </ul>
+                    </div>
+                    <style>
+                        .formbox{
+                            padding:0 3%;
+                            background: #fff;
+                        }
+                        .formbox li{
+                            line-height: 45px;
+                            height:45px;
+                            color:#666;
+                            padding-left:140px;
+                            position: relative;
+                            border-bottom:1px solid #eeeeee;
+                        }
+                        .formbox li span{
+                            position: absolute;
+                            width:120px;
+                            top:0;
+                            left:0;
+                        }
+                        .formbox li i{
+                            color:#de4332;
+                            font-style: normal;
+                            font-size:15px;
+                            padding-left:2px;
+                        }
+                    </style>
+
+                    <div class="submit">
+                        <input name="" type="submit" class="btn" value="点击立刻申请" style="background-color:#ff0000;color:#fff;height:40px;border-color: #ff0000">
+                    </div>
+                </form>
+                            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $.myvali({
+        myform:".beff",								//表单id
+        mybtn:".btn",									//提交表单按钮id
+        myVali:".vali",									//input父盒子的class，可自定义类名
+
+        Required:".Required",							//验证必填选项，值为Required,input自己加class
+        RequiredTps:["不能为空!!!"],					//只验证不为空提示
+
+        Requireds:".Requireds",							//验证必填不同提示，值为Requireds,input自己加class
+        reqtps:".reqtps",								//验证不为空不同提示,input父盒子的class,可自定义类名
+        Reqlength:[[16,19]],								//只验证不为空,设置最小长度和最大长度
+        ReqlengthTps:["+的正确银行卡号"],						//验证不为空长度提示
+        RequiredsTps:["正确银行卡号"],
+
+//        Requireds:".eal",							//验证必填不同提示，值为Requireds,input自己加class
+//        reqtps:".coin",								//验证不为空不同提示,input父盒子的class,可自定义类名
+////        Reqlength:[[3,3]],								//只验证不为空,设置最小长度和最大长度
+////        ReqlengthTps:["+只能为三位数"],						//验证不为空长度提示
+//        RequiredsTps:["只能为三位数"],
+        myMailbox:".eal",
+
+
+        myName:".uersname",								//用户名id或class
+        myName2:".nicheng",								//昵称id或class
+
+        myPassword:".pasw",								//密码id或class
+        myConfirmPassword:".pasws",						//确认密码id或class
+
+        myCard:".cid",									//身份证验证id或class
+
+        // myPhone1:"#v",								//修改手机号(原手机号用这个验证)id或class
+        // phoneIsServer1:false,						//手机号是否与数据库验证，true为是，默认false为否
+        // phoneIsServerUrl1:["1.php"],					//手机号与数据库验证的路径
+        // phoneIsServerType1:"post",					//以什么方式提交
+        // phoneIsServerDType1:"json",					//以什么格式提交
+
+        myPhone:".phone",								//手机号id或class
+        // phoneIsServer:false,							//手机号是否与数据库验证，true为是，默认false为否
+        // phoneIsServerUrl:["1.php"],					//手机号与数据库验证的路径
+        // phoneIsServerType:"post",					//以什么方式提交
+        // phoneIsServerDType:"json",					//以什么格式提交
+
+        isPhoneCode:true,								//开启手机短信验证，true开启，默认false不开启(此项功能与myPhone配合验证)
+        phoneCodeBtn:".codebtn",						//发送手机验证码id或class（按钮）
+        count:30,										//发送短信验证码倒计时，默认60s（按钮）
+        codeBtnCol1:["rgb(150, 150, 150)"],				//短信验证码倒计时（按钮，通过验证前）颜色
+        codeBtnCol2:["#333"],							//短信验证码倒计时（按钮，通过验证后）颜色
+        // isPhoneCodeUrl:["1.php"],					//发送手机验证码与数据库验证的路径（按钮）
+        // isPhoneCodeType:"post",						//以什么方式提交（按钮）
+        // isPhoneCodeDType:"json",						//以什么格式提交（按钮）
+
+
+        phoneCodeInput:".phcode",						//短信验证码id或class（输入框）
+        // phoneCodeInputUrl:["1.php"],					//短信验证码与数据库验证的路径（输入框）
+        // phoneCodeInputType:"post",					//以什么方式提交（输入框）
+        // phoneCodeInputDType:"json",					//以什么格式提交（输入框）
+
+//        myMailbox:".eal",								//邮箱id或class
+        // mailboxIsServer:false,						//邮箱是否要与数据库验证，默认false为否
+        // mailboxIsServerUrl:["1.php"],				//邮箱与数据库验证的路径
+        // mailboxIsServerType:"post",					//以什么方式提交
+        // mailboxIsServerDType:"json",					//以什么格式提交
+
+        // myCode:"#v",									//验证码id或class
+        // CodeIsServerUrl:["1.php"],					//验证码与数据库验证的路径
+        // CodeIsServerType:"post",						//以什么方式提交
+        // CodeIsServerDType:"json",					//以什么格式提交
+
+        // PwdStrong:true,								//密码强度验证，默认false不开启，true开启
+        // isStrongTps:["弱","中","强"],				//密码强度提示，可自定义提示
+
+        // myNameMinLength:3,							//用户名最小长度，不写默认长度3
+        // myNameMaxLength:12,							//用户名最大长度，不写默认长度12
+
+        // myNameMinLength2:3,							//昵称最小长度，不写默认长度3
+        // myNameMaxLength2:12,							//昵称最大长度，不写默认长度12
+
+        // myPasswordMinLength:6,						//密码最小长度，不写默认长度6
+        // myPasswordMaxLength:16,						//密码最大长度，不写默认长度16
+
+        // corrCol:"#4E7504",							//设置正确提示文字的颜色，不设置默认绿色
+        // errCol:"red",								//设置错误提示文字的颜色，不设置默认红色
+    });
+</script>
+
+
+</body>
+</html>
