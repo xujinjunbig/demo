@@ -156,13 +156,14 @@
     </ul>
 
     <h3><span class="fr cgreen">通过</span>匹配结果:</h3>
-    <div class="money">可下款金额: <span class="cred">12315元</span></div>
+    <div class="money">可下款金额: <span class="cred" id="money">--元</span></div>
 
     <hr></hr>
     <a href="./wechat.html"  target="_blank"><input type="button" value="接受额度 支付金额" class="agree" style="background-color: #ff7200"></a>
     <div class="xybox" data-active="0"><span style="top: 4px;left: 4px"></span></div>我已经阅读并同意《<a href="./xiyi2.html" target="_blank" class="light">用户协议</a>》
 </div>
 <script>
+    $("#money").html(parseInt(Math.random()*100000)+"元");
     $(".xybox").click(function(){
         console.log($(this).attr("data-active"));
         if($(this).attr("data-active")==0){
