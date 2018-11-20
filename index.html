@@ -8,8 +8,8 @@
     <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
     <meta content="telephone=no" name="format-detection"/>
     <link href="./static/web/css/daikuan.css" rel="stylesheet" type="text/css"/>
-    <link href="./static/web/css/style.css" type="text/css" rel="stylesheet" />
-    <link href="./static/web/css/style2.css" type="text/css" rel="stylesheet" />
+    <link href="./static/web/css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="./static/web/css/style2.css" type="text/css" rel="stylesheet"/>
     <!--<link rel="./stylesheet" type="text/css" href="./static/web/css/switchery.css" />-->
 
     <script type="text/javascript" src="./static/web/js/jquery.min.js"></script>
@@ -19,68 +19,191 @@
 
 <body>
 <style>
-    html { font-family:microsoft yahei,sans-serif; line-height:1.15; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100% }
-    body { margin:0;}
-    menu, article, aside, details, footer, header, nav, section { display:block }
-    h1 { font-size:2em; margin:.67em 0 }
-    figcaption, figure, main { display:block }
-    figure { margin:1em 40px }
-    hr { box-sizing:content-box; height:0 }
-    code, kbd, pre, samp { font-family:monospace, monospace; font-size:1em }
-    a { background-color:transparent; -webkit-text-decoration-skip:objects; text-decoration:none;}
-    a:active, a:hover { outline-width:0 }
-    abbr[title] { border-bottom:none; text-decoration:underline; text-decoration:underline dotted }
-    b, strong { font-weight:bolder }
-    ul,li{ list-style:none;}
+    html {
+        font-family: microsoft yahei, sans-serif;
+        line-height: 1.15;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%
+    }
 
-    .feedbox,.xieyi{ width:640px; margin:15px auto; overflow:hidden; background:#EFF3F6;}
-    .xyxx{ padding:20px; height:300px; overflow-y:scroll; line-height:25px; font-size:12px;}
-    .agree{ width:50%;background:#ff0000; color:#fff; border:none; border-radius:4px; line-height:42px; font-size:16px; cursor:pointer; margin-top:10px;margin:0px auto;}
+    body {
+        margin: 0;
+    }
 
-    .feedbox ul{ margin:20px;}
-    .feedbox ul li{ margin-bottom:10px;}
-    .feedbox ul li div{ display:inline-block;}
-    .feedbox ul li span{ display:inline-block; width:100px; text-align:left;}
-    .feedbox input[type=text]{ line-height:30px;border:1px solid #C8C9C9;border-radius:4px; color:#797978; padding:0 5px;}
-    .cbox a{ display:inline-block; padding:0 10px; line-height:35px; background:#fff; border:1px solid #C8C9C9; font-size:14px; margin-right:10px; border-radius:4px; color:#797978}
-    .cbox a.on{ background:#FD5C02; color:#fff;}
-    .sqbtn{width:100%; background:#FD5C02; color:#fff; border:none; border-radius:4px; line-height:42px; font-size:16px; cursor:pointer; margin-top:10px;}
+    menu, article, aside, details, footer, header, nav, section {
+        display: block
+    }
 
-    .formbox{
-        padding:0 3%;
+    h1 {
+        font-size: 2em;
+        margin: .67em 0
+    }
+
+    figcaption, figure, main {
+        display: block
+    }
+
+    figure {
+        margin: 1em 40px
+    }
+
+    hr {
+        box-sizing: content-box;
+        height: 0
+    }
+
+    code, kbd, pre, samp {
+        font-family: monospace, monospace;
+        font-size: 1em
+    }
+
+    a {
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+        text-decoration: none;
+    }
+
+    a:active, a:hover {
+        outline-width: 0
+    }
+
+    abbr[title] {
+        border-bottom: none;
+        text-decoration: underline;
+        text-decoration: underline dotted
+    }
+
+    b, strong {
+        font-weight: bolder
+    }
+
+    ul, li {
+        list-style: none;
+    }
+
+    .feedbox, .xieyi {
+        width: 640px;
+        margin: 15px auto;
+        overflow: hidden;
+        background: #EFF3F6;
+    }
+
+    .xyxx {
+        padding: 20px;
+        height: 300px;
+        overflow-y: scroll;
+        line-height: 25px;
+        font-size: 12px;
+    }
+
+    .agree {
+        width: 50%;
+        background: #ff0000;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        line-height: 42px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin: 0px auto;
+    }
+
+    .feedbox ul {
+        margin: 20px;
+    }
+
+    .feedbox ul li {
+        margin-bottom: 10px;
+    }
+
+    .feedbox ul li div {
+        display: inline-block;
+    }
+
+    .feedbox ul li span {
+        display: inline-block;
+        width: 100px;
+        text-align: left;
+    }
+
+    .feedbox input[type=text] {
+        line-height: 30px;
+        border: 1px solid #C8C9C9;
+        border-radius: 4px;
+        color: #797978;
+        padding: 0 5px;
+    }
+
+    .cbox a {
+        display: inline-block;
+        padding: 0 10px;
+        line-height: 35px;
+        background: #fff;
+        border: 1px solid #C8C9C9;
+        font-size: 14px;
+        margin-right: 10px;
+        border-radius: 4px;
+        color: #797978
+    }
+
+    .cbox a.on {
+        background: #FD5C02;
+        color: #fff;
+    }
+
+    .sqbtn {
+        width: 100%;
+        background: #FD5C02;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        line-height: 42px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .formbox {
+        padding: 0 3%;
         background: #fff;
     }
-    .formbox li{
+
+    .formbox li {
         line-height: 45px;
-        height:45px;
-        color:#666;
-        padding-left:140px;
+        height: 45px;
+        color: #666;
+        padding-left: 140px;
         position: relative;
-        border-bottom:1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee;
     }
-    .formbox li span{
+
+    .formbox li span {
         position: absolute;
-        width:120px;
-        top:0;
-        right:0;
+        width: 120px;
+        top: 0;
+        right: 0;
     }
-    .formbox li i{
-        color:#de4332;
+
+    .formbox li i {
+        color: #de4332;
         font-style: normal;
-        font-size:15px;
-        padding-left:2px;
+        font-size: 15px;
+        padding-left: 2px;
     }
-    .boxk{
+
+    .boxk {
         position: absolute;
-        right:0;
-        top:2px;
-        width:30px;
+        right: 0;
+        top: 2px;
+        width: 30px;
     }
-    #aui-show{
+
+    #aui-show {
         position: relative;
     }
 
-    #aui-show ul{
+    #aui-show ul {
         position: absolute;
         left: 0;
         transition: all 60s;
@@ -181,7 +304,7 @@
                         <a href="javascript:;" target="_blank">恭喜包**小姐 电话138****3564成功放款30000元</a>
                     </li>
                     <li>
-                        <a href="javascript:;" target="_blank">恭喜钟*小姐  电话177****9355成功放款65400元</a>
+                        <a href="javascript:;" target="_blank">恭喜钟*小姐 电话177****9355成功放款65400元</a>
                     </li>
                     <li>
                         <a href="javascript:;" target="_blank">恭喜杨**先生 电话152****4524成功放款34500元</a>
@@ -202,7 +325,7 @@
                         <a href="javascript:;" target="_blank">恭喜万**先生 电话135****6158成功放款34000元</a>
                     </li>
                     <li>
-                        <a href="javascript:;" target="_blank">恭喜谭*小姐  电话189****9472成功放款17500元</a>
+                        <a href="javascript:;" target="_blank">恭喜谭*小姐 电话189****9472成功放款17500元</a>
                     </li>
                     <li>
                         <a href="javascript:;" target="_blank">恭喜颜**小姐 电话156****4165成功放款64700元</a>
@@ -231,7 +354,7 @@
                         <a href="javascript:;" target="_blank">恭喜顾**先生 电话151****5897成功放款15400元</a>
                     </li>
                     <li>
-                        <a href="javascript:;" target="_blank">恭喜荀*先生  电话135****6679成功放款48700元</a>
+                        <a href="javascript:;" target="_blank">恭喜荀*先生 电话135****6679成功放款48700元</a>
                     </li>
                     <li>
                         <a href="javascript:;" target="_blank">恭喜郭**小姐 电话134****9654成功放款24500元</a>
@@ -264,7 +387,7 @@
                         <a href="javascript:;" target="_blank">恭喜蒋**小姐 电话138****4569成功放款29000元</a>
                     </li>
                     <li>
-                        <a href="javascript:;" target="_blank">恭喜杨*小姐  电话176****8783成功放款16000元</a>
+                        <a href="javascript:;" target="_blank">恭喜杨*小姐 电话176****8783成功放款16000元</a>
                     </li>
                     <li>
                         <a href="javascript:;" target="_blank">恭喜黄**先生 电话136****6549成功放款28000元</a>
@@ -383,7 +506,7 @@
                         <a href="javascript:;" target="_blank">恭喜任**小姐 电话155****3757成功放款23000元</a>
                     </li>
                     <li>
-                        <a href="javascript:;" target="_blank">恭喜方*小姐  电话154****4253成功放款43000元</a>
+                        <a href="javascript:;" target="_blank">恭喜方*小姐 电话154****4253成功放款43000元</a>
                     </li>
                     <li>
                         <a href="javascript:;" target="_blank">恭喜罗**小姐 电话131***3534成功放款14000元</a>
@@ -489,51 +612,57 @@
         <div class="divHeight"></div>
     </section>
     <input type="button" value="开始申请" class="agree">
-    <div style="margin:15px auto;"><div class="xybox" data-active="0"><span></span></div>我已经阅读并同意《<a href="./xiyi.html" target="_blank" class="light">用户协议</a>》</div>
+    <div style="margin:15px auto;">
+        <div class="xybox" data-active="0"><span></span></div>
+        我已经阅读并同意《<a href="./xiyi.html" target="_blank" class="light">用户协议</a>》
+    </div>
 </section>
 <script type="text/javascript">
-    var suiji = Math.round(Math.random()*10);
-    if(suiji>3){
-        if(suiji%5==0){
-            suiji =1;
+    var suiji = Math.round(Math.random() * 10);
+    if (suiji > 3) {
+        if (suiji % 5 == 0) {
+            suiji = 1;
         }
-        if(suiji%3==0){
-            suiji =suiji/3;
-        }else if(suiji%2==0) {
-            suiji=suiji/2-1
-        }else {
-            suiji=(suiji-1)/2
+        if (suiji % 3 == 0) {
+            suiji = suiji / 3;
+        } else if (suiji % 2 == 0) {
+            suiji = suiji / 2 - 1
+        } else {
+            suiji = (suiji - 1) / 2
         }
     }
 
-    $("#aui-show").find("ul").each(function(index){
+    $("#aui-show").find("ul").each(function (index) {
         var obj = $(this);
-        if(index==suiji){
-            $(this).css("display","block");
-            var time = setTimeout(function(){
-                obj.css("top","-748px");
-            },1000)
+        if (index == suiji) {
+            $(this).css("display", "block");
+            var time = setTimeout(function () {
+                obj.css("top", "-748px");
+            }, 1000)
         }
     });
 
-    $(".xybox").click(function(){
+    $(".xybox").click(function () {
         console.log($(this).attr("data-active"));
-           if($(this).attr("data-active")==0){
-               $(this).addClass("xyboxActive");
-               $(this).attr("data-active","1")
-           }else {
-               $(this).removeClass("xyboxActive");
-               $(this).attr("data-active","0")
-           }
+        if ($(this).attr("data-active") == 0) {
+            $(this).addClass("xyboxActive");
+            $(this).attr("data-active", "1")
+        } else {
+            $(this).removeClass("xyboxActive");
+            $(this).attr("data-active", "0")
+        }
     });
-    $(function(){
+    $(function () {
         //开始编写
-        $(".agree").click(function(){
-            var z=$(".xybox").attr("data-active");
-            if(z==1){
+        $(".agree").click(function () {
+            var z = $(".xybox").attr("data-active");
+            if (z == 1) {
                 $(".aui-flexView").hide();
                 $(".body").show();
-            } else {alert("请先同意条款!");return false;}
+            } else {
+                alert("请先同意条款!");
+                return false;
+            }
 
         });
     })
@@ -547,76 +676,137 @@
         <div class="wrapper move">
             <div id="register">
 
-                                <div  class="beff">
+                <div class="beff">
                     <input name='enews' type='hidden' value='AddFeedback'>
                     <input name='bid' type='hidden' value='1'>
                     <img src="./static/web/img/daikuanw.jpg" style="width:100%;margin:0px auto;"/>
                     <h3>请认真填写以下信息正确性，否则申请无法通过！</h3>
                     <div class="vali">
-                        <input type="text" name="code"  value="" class="Required" placeholder="推荐工号">
+                        <input type="text" id="code2" name="code" value="" class="Required" placeholder="推荐工号">
                     </div>
                     <div class="vali">
-                        <input type="text" name="name" value="" class="Required" placeholder="姓名">
+                        <input type="text" id="name2" name="name" value="" class="Required" placeholder="姓名">
                     </div>
                     <div class="vali">
-                        <input type="text" name="tel" value="" placeholder="请输入11位手机号" class="phone">
+                        <input type="text" id="tel2" name="tel" value="" placeholder="请输入11位手机号" class="phone">
                     </div>
                     <div class="vali">
-                        <input type="text" name="card" value="" class="cid" placeholder="请输入身份证">
+                        <input type="text" id="card2" name="card" value="" class="cid" placeholder="请输入身份证">
                     </div>
                     <div class="vali reqtps">
-                        <input type="text" name="blank" value="" class="Requireds" placeholder="银行卡号">
+                        <input type="text" id="blank2" name="blank" value="" class="Requireds" placeholder="银行卡号">
                     </div>
 
                     <div class="vali">
-                        <input type="text" name="coin" value="" maxlength="3" class="eal" placeholder="你的芝麻信用分">
+                        <input type="text" id="coin" name="coin" value="" maxlength="3" class="eal"
+                               placeholder="你的芝麻信用分">
                         <!--<p class="ealWords" style="font-size:12px;padding-top:2px;display:none;">请输入3位数字</p>-->
                     </div>
 
                     <div class="formbox">
                         <ul>
-                            <li><span>是否有社保</span><div class="boxk" style="float: right;height: 40px;margin-bottom: 0" ><input type="checkbox" id="social" name="security" class="chk_3" value="1"><label for="social"></label></div></li>
-                            <li><span>是否有公积金</span><div class="boxk" style="float: right;height: 40px;margin-bottom: 0"><input type="checkbox" id="fund" name="fund" class="chk_3" value="1"><label for="fund"></label></div></li>
-                            <li><span>是否有车</span><div class="boxk" style="float: right;height: 40px;margin-bottom: 0"><input type="checkbox" id="car"  name="car" class="chk_3"  value="1"><label for="car"></label></div></li>
-                            <li><span>是否有房</span><div class="boxk" style="float: right;height: 40px;margin-bottom: 0"><input type="checkbox"id="house"  name="house" class="chk_3" value="1"><label for="house"></label></div></li>
+                            <li>
+                                <span>是否有社保</span>
+                                <div class="boxk" style="float: right;height: 40px;margin-bottom: 0">
+                                    <input type="checkbox" id="social" name="security" class="chk_3" value="0">
+                                    <label for="social"></label>
+                                </div>
+                            </li>
+                            <li><span>是否有公积金</span>
+                                <div class="boxk" style="float: right;height: 40px;margin-bottom: 0"><input
+                                        type="checkbox" id="fund" name="fund" class="chk_3" value="1"><label
+                                        for="fund"></label></div>
+                            </li>
+                            <li><span>是否有车</span>
+                                <div class="boxk" style="float: right;height: 40px;margin-bottom: 0"><input
+                                        type="checkbox" id="car" name="car" class="chk_3" value="1"><label
+                                        for="car"></label></div>
+                            </li>
+                            <li><span>是否有房</span>
+                                <div class="boxk" style="float: right;height: 40px;margin-bottom: 0"><input
+                                        type="checkbox" id="house" name="house" class="chk_3" value="1"><label
+                                        for="house"></label></div>
+                            </li>
                         </ul>
                     </div>
                     <style>
-                        .formbox{
-                            padding:0 3%;
+                        .formbox {
+                            padding: 0 3%;
                             background: #fff;
                         }
-                        .formbox li{
+
+                        .formbox li {
                             line-height: 45px;
-                            height:45px;
-                            color:#666;
-                            padding-left:140px;
+                            height: 45px;
+                            color: #666;
+                            padding-left: 140px;
                             position: relative;
-                            border-bottom:1px solid #eeeeee;
+                            border-bottom: 1px solid #eeeeee;
                         }
-                        .formbox li span{
+
+                        .formbox li span {
                             position: absolute;
-                            width:120px;
-                            top:0;
-                            left:0;
+                            width: 120px;
+                            top: 0;
+                            left: 0;
                         }
-                        .formbox li i{
-                            color:#de4332;
+
+                        .formbox li i {
+                            color: #de4332;
                             font-style: normal;
-                            font-size:15px;
-                            padding-left:2px;
+                            font-size: 15px;
+                            padding-left: 2px;
                         }
                     </style>
 
                     <div class="submit">
-                        <a href="./apply.html" target="_blank" class="btn" style="background-color:#ff0000;color:#fff;line-height:40px;border-color: #ff0000;display:block;">点击立刻申请</a>
+                        <a href="javascript:" target="_blank" id="subBtn" class="btn"
+                           style="background-color:#ff0000;color:#fff;line-height:40px;border-color: #ff0000;display:block;">点击立刻申请</a>
                     </div>
                 </div>
-                            </div>
+            </div>
         </div>
     </div>
 </div>
-<script type="text/javascript">
+<script>
+    function getUrl(addr, params) {
+        let paramsArr = [];
+        for (let k in params) {
+          paramsArr.push(k + '=' + params[k]);
+        }
+        let paramsStr = paramsArr.join('&');
+        let url = addr + '?' + paramsStr;
+        return url;
+    }
+    var uInfo = localStorage.getItem('uInfo');
+    uInfo = JSON.parse(uInfo);
+    if(uInfo){
+        if(new Date().getTime() - uInfo.time > 600000) {
+            localStorage.removeItem('uInfo');
+        }
+    } else {
+        window.location.href = './index.html';
+    }
+
+    $("#subBtn").click(function () {
+        var parmas = {
+            code2: $("#code2").val(),
+            name2: $("#name2").val(),
+            tel2: $("#tel2").val(),
+            card2: $("#card2").val(),
+            blank2: $("#blank2").val(),
+            coin: $("#coin").val(),
+            social: $("#social").get(0).checked ? 1 : 0,  // 是否有社保
+            fund: $("#fund").get(0).checked ? 1 : 0,  // 是否有公积金
+            car: $("#car").get(0).checked ? 1 : 0,  // 是否有车
+            house: $("#house").get(0).checked ? 1 : 0,  // 是否有房
+            time: new Date().getTime(),
+        };
+        window.open(getUrl('./apply.html', parmas));
+        localStorage.setItem('uInfo', JSON.stringify(parmas));
+    })
+
+
     $.myvali({
         myform:".beff",								//表单id
         mybtn:".btn",									//提交表单按钮id
@@ -700,6 +890,8 @@
         // corrCol:"#4E7504",							//设置正确提示文字的颜色，不设置默认绿色
         // errCol:"red",								//设置错误提示文字的颜色，不设置默认红色
     });
+
+
 </script>
 
 
