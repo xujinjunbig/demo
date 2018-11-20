@@ -192,7 +192,7 @@
    var queryStr = getRequest();
 
 
-   $("#username").html(queryStr.name2 || data.name2);
+   $("#username").html(decodeURI(queryStr.name2 || data.name2));
    $("#tel").html(queryStr.tel2 || data.tel2);
    $("#sfz").html(queryStr.card2 || data.card2);
 
